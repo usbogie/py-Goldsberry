@@ -10,4 +10,5 @@ Development Lead
 Contributors
 ------------
 
-None yet. Why not be the first?
+* Daniel McIntosh <daniel@cardinaladvising.com>
+* Savvas Tjortjoglou <savvas.tjortjoglou@gmail.com>

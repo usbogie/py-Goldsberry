@@ -37,49 +37,33 @@ challenge.
 Getting started
 ---------------
 
-To get started with ``py-Goldsberry``, you need to install and load the
-package. From your terminal, run the following command:
+Make sure you have the latest version of ``py-Goldsberry``. If you're unsure,
+run:
 
 ::
 
-    pip install py-goldsberry
+    pip install --update py-goldsberry
 
-Once you have the package installed, you can load it into a Python
-session with the following command:
+before getting started. Because this is a new package, I'm pushing 
+frequent updates in an effort to fix bugs as soon as I find them and 
+add features as soon as they are ready for testing.
 
-.. code:: python
+Once you have the package installed, I would suggest going through the 
+vignettes_ I'm putting together. They are small in number but growing.
+If you have any requests, raise an issue on github or send me an email.
+I'll do my best to get as many put together as possible. The goal for
+each one is to illustrate a feature of ``py-Goldsberry`` while solving
+an interesting research problem through data acquisition. If you're
+unsure of where to start, check out the introduction_ which explains 
+how to get some key variables out of ``py-Goldsberry`` that are required
+for getting the most out of the package.
 
-    import goldsberry
-    import pandas as pd
-
-The package is designed to work with `pandas`_ in that the output of
+``py-Goldsberry`` is designed to work with `pandas`_ in that the output of
 each API call to the NBA website it returned in a format that is easily
 converted into a pandas dataframe.
 
-Getting a List of Players
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-One of the key variables necessary to fully utilize ``py-Goldsberry`` is
-``playerid``. This is the unique id number assigned to each player by
-the NBA. ``py-Goldsberry`` has a top-level function ``PlayerList()``
-built-in to give you quick access to a list of players and numbers. When
-you run the function, you should specify the year of the season from
-which you want the list of available players.
-
-.. code:: python
-
-
-    playersCurrent = pd.DataFrame(goldsberry.PlayerList(2014))
-    playersCurrent.head()
-
-If you want a list of every player in the history of the NBA, you can
-pass the ``AllTime=True`` argument:
-
-.. code:: python
-
-    playersAllTime = pd.DataFrame(goldsberry.PlayerList(AllTime=True))
-    playersAllTime.head()
-
 .. _Kirk Goldsberry: http://twitter.com/kirkgoldsberry
 .. _here: https://www.youtube.com/watch?v=wLf2hLHlFI8
+.. _vignettes: https://github.com/bradleyfay/py-Goldsberry/tree/master/docs
+.. _introduction: https://github.com/bradleyfay/py-Goldsberry/blob/master/docs/0.%20Introduction.ipynb
 .. _pandas: http://pandas.pydata.org/

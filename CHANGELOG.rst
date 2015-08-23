@@ -1,3 +1,13 @@
+Upcoming
+===========
+
+Modifications:
+* Changed team.game_logs().TeamGameLogs() to team.game_logs().logs()
+* Updated README to point to Vignettes
+
+Feature Additions:
+* Added Vignettes to Github repository https://github.com/bradleyfay/py-Goldsberry/tree/master/docs
+
 Version 0.6
 ============
 
