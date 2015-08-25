@@ -7,4 +7,4 @@ branches:
 	only: 
 	- develop
 script: 
-    - "python setup.py py.test"
+    - "python setup.py py.test" 
