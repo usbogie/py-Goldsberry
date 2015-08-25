@@ -1,0 +1,10 @@
+language: python
+python:
+    - "2.7"
+install: 
+    - "pip install py-goldsberry"
+branches:
+	only: 
+	- develop
+script: 
+    - "python setup.py py.test"
