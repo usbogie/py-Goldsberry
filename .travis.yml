@@ -4,7 +4,7 @@ python:
 install: 
     - "pip install py-goldsberry"
 branches:
-	only: 
-	- develop
+    only: 
+    - develop
 script: 
     - "python setup.py py.test" 
